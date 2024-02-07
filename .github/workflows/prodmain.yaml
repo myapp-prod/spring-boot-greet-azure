@@ -1,4 +1,4 @@
-name: Web App - Contributorwebapp
+name: Web 
 
 on:
   push:
@@ -55,7 +55,8 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
+          resource-group-name: dev
           app-name: 'bh-dev-deploy'
           slot-name: 'Production'
           package: '*.jar'
-          resource-group-name: dev
+          
