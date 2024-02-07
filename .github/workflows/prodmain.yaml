@@ -56,7 +56,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           resource-group-name: dev
-          app-name: 'bh-dev-deploy'
+          app-name: 'java-jar'
           slot-name: 'Production'
           package: '*.jar'
           
